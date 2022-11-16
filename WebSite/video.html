@@ -1,0 +1,324 @@
+﻿<!doctype html>
+<html>
+
+    <head>
+	
+        <meta charset="utf-8">
+        <title>影片首頁-飛揚的部落格</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="./icons/UTA.ico">
+
+        <link rel="stylesheet" href="./Css/bootstrap.min.css">
+        <link rel="stylesheet" href="./Css/style.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<style>
+		body, html {
+  			height: 100%;
+		}
+	</style>
+		
+    </head>
+
+    <body>
+	
+       <header>
+				<div class="bg-light p-4 topbar">
+					<h3 class="text-primary"><strong>飛揚的部落格</strong></h3>
+					
+					<button onclick="document.getElementById('modalid01').style.display='block'">註冊</button>
+					<div id="modalid01" class="modal">
+					  <span onclick="document.getElementById('modalid01').style.display='none'" class="close" title="關閉">&times;</span>
+					  <form class="modal-content">
+					    <div class="container">
+						<h2><strong>註冊帳戶</strong></h2>
+						<p>請填寫這個表格以註冊帳戶</p>
+						<hr>
+						<label for="email"><b>電子信箱(Email)</b></label>
+						<input type="text" placeholder="輸入Email" name="email" required>
+						
+						<label for="passw"><b>密碼</b></label>
+						<input type="password" placeholder="輸入密碼" name="passw" required>
+
+						<label for="passw-repeat"><b>再輸入一次密碼</b></label>
+						<input type="password" placeholder="再輸入一次密碼" name="passw-repeat" required>
+
+						<label>
+						  <input type="checkbox" checked="checked" name="remember" style="margin-buttom:15px"> 記住帳號
+						</label>
+
+						<div class="clearfix">
+						  <button type="button" onclick="document.getElementById('modalid01').style.display='none'" class="cancelbtn">關閉</button>
+						  <button type="submit" class="signupbtn">註冊</button>
+						</div>
+					    </div>
+					  </form>
+					</div>
+					
+					<button onclick="document.getElementById('modalid00').style.display='block'" style="margin-right:10px;">登入</button>
+					<div id="modalid00" class="modal">
+					  <span onclick="document.getElementById('modalid00').style.display='none'" class="close" title="關閉">&times;</span>
+					  <form class="modal-content">
+					    <div class="container">
+						<h2><strong>登入帳戶</strong></h2>
+						<hr>
+						<label for="email"><b>電子信箱(Email)</b></label>
+						<input type="text" placeholder="輸入Email" name="email" required>
+						
+						<label for="passw"><b>密碼</b></label>
+						<input type="password" placeholder="輸入密碼" name="passw" required>
+
+						<label>
+						  <input type="checkbox" checked="checked" name="remember" style="margin-buttom:15px"> 記住帳號
+						</label>
+
+						<div class="clearfix">
+						  <button type="button" onclick="document.getElementById('modalid00').style.display='none'" class="cancelbtn">關閉</button>
+						  <button type="submit" class="signupbtn">登入</button>
+						</div>
+					    </div>
+					  </form>
+					</div>
+				</div>
+
+<script>
+	var modal = document.getElementById('modalid00');
+
+	window.onclick = fuction(event) {
+	  if(event.target == modal){
+	    modal.style.display = "none";
+	  }
+	}
+	
+	var modal = document.getElementById('modalid01');
+
+	window.onclick = fuction(event) {
+	  if(event.target == modal){
+	    modal.style.display = "none";
+	  }
+	}
+</script>
+	   
+                <div class="navbar bg-dark">
+					<a href="index.html" style="color:white;">首頁</a>
+					<div class="dropdown">
+						<button class="dropbtn">相片</button>
+						<div class="dropdown-content">
+							<a href="#">美音UTA</a>
+							<a href="#"></a>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<button class="dropbtn">遊戲介紹</button>
+						<div class="dropdown-content">
+							<a href="#">洛克人Zero</a>
+							<a href="#"></a>
+						</div>
+					</div>	
+					
+					<div class="dropdown">
+						<button class="dropbtn">日記</button>
+						<div class="dropdown-content">
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<button class="dropbtn">影片</button>
+						<div class="dropdown-content">
+							<a href="#">影片-Ado</a>
+							<a href="#"></a>
+						</div>
+					</div>
+					
+                </div>
+
+				<div class="bg-dark">
+                <center><img src="Images/Cover01.jpg" class="topSlides" alt="banner" style="width:70%"></center>
+				</div>
+				
+            
+        </header>
+
+        <section class="box-30 p-4 bg-dark">
+            <div class="container">                
+                <div class="col-12 text-center" style="text-align:center">
+				<iframe width="1000" height="800" src="https://www.youtube.com/embed/1PnW9BPp-Ew" title="洛克人X4 序關(Rockman X4 First Stage)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<video id="newgenesis" width="1000" controls>
+				<source src="Videos/《航海王劇場版：紅髮歌姬》新時代 (UTA from ONE PIECE FILM RED)｜現正熱映中.mp4" title="Ado/新時代" type="video/mp4">
+				Your browser does not support the video tag.
+				</video>
+                </div>
+            </div>
+        </section>
+		<section class="box-30 p-4 bg-dark">
+			<div class="col-12 text-center">
+				<button onclick="playPause()">播放/暫停</button>
+				<button onclick="makeBig()">放大</button>
+				<button onclick="makeSmall()">縮小</button>
+				<button onclick="makeNormal()">正常大小</button>
+			</div>
+		</section>
+		
+
+		
+<section class="box-30 bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="text-center text-white mb-4"><strong>改善建議</strong></h2>
+				<form>
+					<div class="row form-group">
+						<label for="FormName" class="col-md-2 col-form-label text-white">姓　　名</label>
+						<div class="col-md-10">
+							<input type="text" name="name" id="FormName" placeholder="請輸入您的姓名" class="form-control is-valid" required>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label for="FormEmail" class="col-md-2 col-form-label text-white">電子信箱</label>
+						<div class="col-md-10">
+							<input type="text" name="email" id="FormEmail" placeholder="請輸入您的Email" class="form-control is-invalid" require>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-2 col-form-label text-white">喜好程度</div>
+						<div class="col-md-10">
+							<div class="form-check">
+								<label class="form-check-label text-white">
+									<input type="radio" name="like" value="option1" class="form-check-input" checked>非常喜歡								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label text-white">
+									<input type="radio" name="like" value="option2" class="form-check-input">尚可
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label text-white">
+									<input type="radio" name="like" value="option3" class="form-check-input">有改進空間
+								</label>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row form-group">
+						<label class="col-md-2 col-form-label text-white">改善建議</label>
+						<div class="col-md-10">
+							<textarea rows="3" name="advise" placeholder="請填寫您對於此網站的改善建議" class="form-control"></textarea>
+						</div>
+					</div>
+					
+					<div class="row form-group justify-content-end">
+						<div class="col-12 col-sm-4">
+							<button type="reset" class="btn btn-default btn-md text-black">清除</button>
+							<button onclick="submitEvent()" type="submit" class="btn btn-success btn-md float-right">送出</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-12 col-md-4 mt-60">
+				<address class="text-white">
+					<strong>宗門</strong>：九玄神殿, Inc.<br/>
+					<strong>地址</strong>：100東皇群山XXXXXXXXXX<br/>
+					<strong><abbr title="連絡電話">TEL</abbr></strong>：(03) 456-7890<br/>
+					<strong><abbr title="電子信箱">E-Mail</abbr></strong>：<a href="mailto:galaxypalace@gmail.com">galaxypalace@gmail.com</a>
+				</address>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<footer class="bg-dark">
+	<p class="text-center text-white">© 2022 九玄神殿</p>
+	<center><a href="https://www.facebook.com/feiyang.0727" class="fa fa-facebook"></a>
+	<a href="https://www.youtube.com/channel/UC6cYOndQloUdO4mcQHIN6Sw" class="fa fa-youtube"></a>
+	<a href="https://www.instagram.com/feiyang0727/" class="fa fa-instagram"></a></center>
+	</footer>
+	
+    </body>
+
+<script>
+	function submitEvent() {
+		alert("此功能尚在開發中");
+	}
+	var videonewgenesis = document.getElementById("newgenesis");
+	
+	function playPause(){
+	if (videonewgenesis.paused)
+		videonewgenesis.play();
+	else
+		videonewgenesis.pause();
+	}
+	
+	function makeBig() {
+		if(videonewgenesis.width >1600){
+			alert("已經是最大了");
+		}else{
+			videonewgenesis.width += 100;
+		}
+	}
+	
+	function makeSmall(){
+		if(videonewgenesis.width <400){
+			alert("已經是最小了");
+		}else{
+			videonewgenesis.width -= 100;
+		}
+	}
+	
+	function makeNormal(){
+		videonewgenesis.width = 1000;
+	}
+	
+	function topdropdown() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+	
+	const allDropdowns = document.querySelectorAll('.dropdown-content');
+	const DROP_CLASS = 'drop';
+	const navbar = document.querySelector('.navbar');
+
+	navbar.addEventListener('click', ({target}) => {
+    if (!target.classList.contains('dropbtn')) return;
+  
+	const parent = target.parentNode;
+	const navItems = parent
+    .querySelector('.dropdown-content');
+
+	allDropdowns.forEach(el => el !== navItems && el.classList.remove(DROP_CLASS));
+  
+	if (navItems) {
+    navItems.classList.toggle(DROP_CLASS);
+	}
+	});
+
+
+	/*var topIndex=0;
+	carousel();
+
+	function carousel(){
+		var i;
+		var x= document.getElementsByClassName("topSlides");
+		for(i=0;i < x.length ; i++){
+			x[i].style.display = "none";
+		}
+		topIndex++;
+		if (topIndex > x.length) {topIndex = 1}
+		x[topIndex-1].style.display = "block";
+		setTimeout(carousel,5000);
+	}*/
+	
+</script>
+
+
+
+</html>

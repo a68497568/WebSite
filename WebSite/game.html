@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+    <head>
+	
+        <meta charset="utf-8">
+        <title>遊戲介紹-青雲的部落格</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="./Css/bootstrap.min.css">
+        <link rel="stylesheet" href="./Css/style.css">
+		<link rel="stylesheet" href="style.css">
+		
+    </head>
+
+    <body>
+	
+       <header>
+                <div class="navbar bg-dark">
+                    <h3 class="text-white"><strong>青雲的部落格</strong></h3>
+					<a href="index.html" style="color:white;">首頁</a>
+					<div class="dropdown">
+						<button class="dropbtn">相片</button>
+						<div class="dropdown-content">
+							<a href="#">美音UTA</a>
+							<a href="#"></a>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<button class="dropbtn">遊戲介紹</button>
+						<div class="dropdown-content">
+							<a href="#">洛克人Zero</a>
+							<a href="#"></a>
+						</div>
+					</div>	
+					
+					<div class="dropdown">
+						<button class="dropbtn">日記</button>
+						<div class="dropdown-content">
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<button class="dropbtn">影片</button>
+						<div class="dropdown-content">
+							<a href="#">影片-Ado</a>
+							<a href="#"></a>
+						</div>
+					</div>
+					
+                </div>
+
+				<div class="bg-dark">
+                <img src="Images/Cover01.jpg" alt="banner" class="img-fluid" style="display:block;margin:auto;"/>
+				<hr style="border:0;height:1;background-color:darkgrey">
+				</div>
+				
+            
+        </header>
+
+        <section class="box-30 p-4 bg-dark">
+            <div class="container">
+                
+                <div class="col-12 col-md-8">
+
+                </div>
+
+            </div>
+        </section>
+		
+	<!--改善建議與聯絡資訊/開始-->
+<section class="box-30 bg-dark">
+	<div class="container">
+		<div class="row">
+			<!-- 改善建議/開始 -->
+			<div class="col-12 col-md-8">
+				<h2 class="text-center text-white mb-4"><strong>改善建議</strong></h2>
+				<form>
+					<!-- 姓名欄位/開始 -->
+					<div class="row form-group">
+						<label for="FormName" class="col-md-2 col-form-label text-white">姓　　名</label>
+						<div class="col-md-10">
+							<input type="text" id="FormName" placeholder="請輸入您的姓名" class="form-control is-valid" required>
+						</div>
+					</div>
+					<!-- 姓名欄位/結束 -->
+					<!-- 電子信箱/開始 -->
+					<div class="row form-group">
+						<label for="FormEmail" class="col-md-2 col-form-label text-white">電子信箱</label>
+						<div class="col-md-10">
+							<input type="text" id="FormEmail" placeholder="請輸入您的Email" class="form-control is-invalid" require>
+						</div>
+					</div>
+					<!-- 電子信箱/結束 -->
+					<!-- 喜好程度/開始 -->
+					<div class="row">
+						<div class="col-md-2 col-form-label text-white">喜好程度</div>
+						<div class="col-md-10">
+							<div class="form-check">
+								<label class="form-check-label text-white">
+									<input type="radio" name="like" value="option1" class="form-check-input" checked>非常喜歡
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label text-white">
+									<input type="radio" name="like" value="option2" class="form-check-input">尚可
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label text-white">
+									<input type="radio" name="like" value="option3" class="form-check-input" disabled>有改進空間
+								</label>
+							</div>
+						</div>
+					</div>
+					<!-- 喜好程度/結束 -->
+					<!-- 改善建議/開始 -->
+					<div class="row form-group">
+						<label class="col-md-2 col-form-label text-white">改善建議</label>
+						<div class="col-md-10">
+							<textarea rows="3" placeholder="請填寫您對於此網站的改善建議" class="form-control"></textarea>
+						</div>
+					</div>
+					<!-- 改善建議/結束 -->
+					<!-- 送出與清除按鈕/開始 -->
+					<div class="row form-group justify-content-end">
+						<div class="col-12 col-sm-4">
+							<button type="reset" class="btn btn-default btn-md text-white" disabled>清除</button>
+							<button onclick="submitEvent()" type="submit" class="btn btn-success btn-md float-right">送出</button>
+						</div>
+					</div>
+					<!-- 送出與清除按鈕/開始 -->
+				</form>
+			</div>
+			<!-- 改善建議/結束 -->
+			<!-- 聯絡資訊/開始 -->
+			<div class="col-12 col-md-4 mt-60">
+				<address class="text-white">
+					<strong>宗門</strong>：九玄神殿, Inc.<br/>
+					<strong>地址</strong>：100東皇群山XXXXXXXXXX<br/>
+					<strong><abbr title="連絡電話">TEL</abbr></strong>：(03) 456-7890<br/>
+					<strong><abbr title="電子信箱">E-Mail</abbr></strong>：<a href="mailto:galaxypalace@gmail.com">galaxypalace@gmail.com</a>
+				</address>
+			</div>
+			<!-- 聯絡資訊/結束 -->
+		</div>
+	</div>
+</section>
+<!--改善建議與聯絡資訊/結束-->
+	
+    </body>
+
+<!--頁腳/開始-->
+<footer class="mt-5 bg-dark footer-content">
+	<p class="text-center text-white mb-0">© 2022 九玄神殿</p>
+</footer>
+<!--頁腳/結束-->
+
+<script>
+	function submitEvent() {
+		alert("此功能尚在開發中");
+	}
+	
+	const allDropdowns = document.querySelectorAll('.dropdown-content')
+	const DROP_CLASS = 'drop';
+	const navbar = document.querySelector('.navbar');
+
+
+	navbar.addEventListener('click', ({target}) => {
+    if (!target.classList.contains('dropbtn')) return;
+  
+	const parent = target.parentNode;
+	const navItems = parent
+    .querySelector('.dropdown-content');
+
+	allDropdowns.forEach(el => el !== navItems && el.classList.remove(DROP_CLASS));
+  
+	if (navItems) {
+    navItems.classList.toggle(DROP_CLASS);  
+	}
+	});
+	
+</script>
+
+
+</html>

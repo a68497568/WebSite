@@ -1,0 +1,281 @@
+﻿<!doctype html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>首頁-青雲的部落格</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="./Css/bootstrap.min.css">
+        <link rel="stylesheet" href="./Css/style.css">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body, html {
+  			height: 100%;
+		}
+	</style>
+    
+    </head>
+
+    <body>
+
+        <header>
+				<div class="bg-light p-4 topbar">
+					<h3 class="text-primary"><strong>青雲的部落格</strong></h3>
+					<button onclick="document.getElementById('modalid01').style.display='block'">註冊</button>
+					<div id="modalid01" class="modal">
+					  <span onclick="document.getElementById('modalid01').style.display='none'" class="close" title="關閉">&times;</span>
+					  <form class="modal-content">
+					    <div class="container">
+						<h2><strong>註冊帳戶</strong></h2>
+						<p>請填寫這個表格以註冊帳戶</p>
+						<hr>
+						<label for="email"><b>電子信箱(Email)</b></label>
+						<input type="text" placeholder="輸入Email" name="email" required>
+						
+						<label for="passw"><b>密碼</b></label>
+						<input type="password" placeholder="輸入密碼" name="passw" required>
+
+						<label for="passw-repeat"><b>再輸入一次密碼</b></label>
+						<input type="password" placeholder="再輸入一次密碼" name="passw-repeat" required>
+
+						<label>
+						  <input type="checkbox" checked="checked" name="remember" style="margin-buttom:15px"> 記住帳號
+						</label>
+
+						<div class="clearfix">
+						  <button type="button" onclick="document.getElementById('modalid01').style.display='none'" class="cancelbtn">關閉</button>
+						  <button type="submit" class="signupbtn">註冊</button>
+						</div>
+					    </div>
+					  </form>
+					</div>	
+				</div>
+
+<script>
+	var modal = document.getElementById('modalid01');
+
+	window.onclick = fuction(event) {
+	  if(event.target == modal){
+	    modal.style.display = "none";
+	  }
+	}
+</script>
+	   
+                <div class="navbar bg-dark">
+					<a href="index.html" style="color:white;">首頁</a>
+					<div class="dropdown">
+						<button class="dropbtn">相片</button>
+						<div class="dropdown-content">
+							<a href="#">美音UTA</a>
+							<a href="#"></a>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<button class="dropbtn">遊戲介紹</button>
+						<div class="dropdown-content">
+							<a href="#">洛克人Zero</a>
+							<a href="#"></a>
+						</div>
+					</div>	
+					
+					<div class="dropdown">
+						<button class="dropbtn">日記</button>
+						<div class="dropdown-content">
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<button class="dropbtn">影片</button>
+						<div class="dropdown-content">
+							<a href="#">影片-Ado</a>
+							<a href="#"></a>
+						</div>
+					</div>
+					
+                </div>
+
+				<div class="bg-dark">
+                <center><img src="Images/Cover01.jpg" class="topSlides" alt="banner" style="width:70%"></center>
+				</div>
+				
+            
+        </header>
+
+        
+        <section class="box-30 p-4 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+
+			<div class="countdownbar">
+			  <p id="countdown"></p>
+			</div>
+
+                        <h2 class="text-left text-warning mb-4">個人IG連結(有倉鼠的影片和照片)</h2>
+                        <a href="https://www.instagram.com/feiyang0727/"><img src="Images/Instagram.jpg" height="100" width="100"></a>
+                        <span class="text-light"><a href="https://www.instagram.com/feiyang0727/" style="color:white;">https://www.instagram.com/feiyang0727/</a></span>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <hr style="border:0;height:1;background-color:darkgrey">
+                        <h2 class="text-left text-warning mb-4"><strong>我家的倉鼠</strong></h2>
+                        <img src="Images/Mochi-01.JPG" width="200">
+                        <span class="text-light">麻糬</span>
+                        <p class="text-light">2018年11月15日來到這個家裡</p>
+                        <p class="text-light">2021年1月2日離開去當小天使</p>
+                        <hr style="border:0;height:1;background-color:darkgrey">
+                        <img src="Images/Nemu-sona takaramono-01.JPG" width="200">
+                        <span class="text-light">睏寶</span>
+                        <p class="text-light">2018年11月15日來到這個家裡</p>
+                        <p class="text-light">2021年4月5日離開去當小天使</p>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <hr style="border:0;height:1;background-color:darkgrey">
+                        <h2 class="text-left text-warning mb-4"><strong>倉鼠照片</strong></h2>
+                        <table cellpadding="2" cellspacing="0" style="width: 100%;">
+                            <tbody><tr>
+                            <td><img  src="Images/Mochi-02.JPG" width="400" /></td>
+                            <td><img  src="Images/Nemu-sona takaramono-02.JPG" width="400" /></td>
+                            </tr></tbody></table>
+                        
+                        <br/>
+                        <a href="Photo.html" class="text-light">點此看更多倉鼠照片</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+<section class="box-30 bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="text-center text-white mb-4"><strong>改善建議</strong></h2>
+				<form>
+					<div class="row form-group">
+						<label for="FormName" class="col-md-2 col-form-label text-white">姓　　名</label>
+						<div class="col-md-10">
+							<input type="text" name="name" id="FormName" placeholder="請輸入您的姓名" class="form-control is-valid" required>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<label for="FormEmail" class="col-md-2 col-form-label text-white">電子信箱</label>
+						<div class="col-md-10">
+							<input type="text" name="email" id="FormEmail" placeholder="請輸入您的Email" class="form-control is-invalid" require>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-2 col-form-label text-white">喜好程度</div>
+						<div class="col-md-10">
+							<div class="form-check">
+								<label class="form-check-label text-white">
+									<input type="radio" name="like" value="option1" class="form-check-input" checked>非常喜歡								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label text-white">
+									<input type="radio" name="like" value="option2" class="form-check-input">尚可
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label text-white">
+									<input type="radio" name="like" value="option3" class="form-check-input">有改進空間
+								</label>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row form-group">
+						<label class="col-md-2 col-form-label text-white">改善建議</label>
+						<div class="col-md-10">
+							<textarea rows="3" name="advise" placeholder="請填寫您對於此網站的改善建議" class="form-control"></textarea>
+						</div>
+					</div>
+					
+					<div class="row form-group justify-content-end">
+						<div class="col-12 col-sm-4">
+							<button type="reset" class="btn btn-default btn-md text-black">清除</button>
+							<button onclick="submitEvent()" type="submit" class="btn btn-success btn-md float-right">送出</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-12 col-md-4 mt-60">
+				<address class="text-white">
+					<strong>宗門</strong>：九玄神殿, Inc.<br/>
+					<strong>地址</strong>：100東皇群山XXXXXXXXXX<br/>
+					<strong><abbr title="連絡電話">TEL</abbr></strong>：(03) 456-7890<br/>
+					<strong><abbr title="電子信箱">E-Mail</abbr></strong>：<a href="mailto:galaxypalace@gmail.com">galaxypalace@gmail.com</a>
+				</address>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<footer class="bg-dark">
+	<p class="text-center text-white">© 2022 九玄神殿</p>
+	<center><a href="https://www.facebook.com/feiyang.0727" class="fa fa-facebook"></a>
+	<a href="https://www.youtube.com/channel/UC6cYOndQloUdO4mcQHIN6Sw" class="fa fa-youtube"></a>
+	<a href="https://www.instagram.com/feiyang0727/" class="fa fa-instagram"></a></center>
+	</footer>
+	
+    </body>
+
+<script>
+	function submitEvent() {
+		alert("此功能尚在開發中");
+	}
+	
+	function topdropdown() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+	
+	const allDropdowns = document.querySelectorAll('.dropdown-content');
+	const DROP_CLASS = 'drop';
+	const navbar = document.querySelector('.navbar');
+
+	navbar.addEventListener('click', ({target}) => {
+    if (!target.classList.contains('dropbtn')) return;
+  
+	const parent = target.parentNode;
+	const navItems = parent
+    .querySelector('.dropdown-content');
+
+	allDropdowns.forEach(el => el !== navItems && el.classList.remove(DROP_CLASS));
+  
+	if (navItems) {
+    navItems.classList.toggle(DROP_CLASS);
+	}
+	});
+
+	/*var countDownDate = new Date("July 27, 2030 00:00:00").getTime();
+	var x = setInterval(fuction() {
+	  
+	var now = new Date().getTime();
+	var distance = countDownDate - now;
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 *60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	document.getElementById("countdown").innerHTML = days + "天" + hours + "小時" + minutes + "分鐘" + seconds + "秒";
+
+	if (distance < 0){
+
+	  clearInterval(x);
+	  document.getElementById("countdown").innerHTML = "EXPIRED";
+	}
+	},1000);*/
+	
+</script>
+
+</html>
